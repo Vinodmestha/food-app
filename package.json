@@ -7,7 +7,7 @@
   "scripts": {
     "build": "parcel build ./src/index.html",
     "start": "parcel ./src/index.html",
-    "predeploy":"nm run build",
+    "predeploy":"npm run build",
     "deploy":"gh-pages -d build"
   },
   "author": "Vinod",
