@@ -34059,29 +34059,7 @@ function Profile() {
 
 var _default = Profile;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","./pic.jpg":"components/pic.jpg"}],"components/Menu.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _react = _interopRequireDefault(require("react"));
-
-var _reactRouterDom = require("react-router-dom");
-
-var _pic = _interopRequireDefault(require("./pic.jpg"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Menu() {
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null);
-}
-
-var _default = Menu;
-exports.default = _default;
-},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","./pic.jpg":"components/pic.jpg"}],"components/app.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./pic.jpg":"components/pic.jpg"}],"components/app.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -34101,14 +34079,12 @@ var _header = _interopRequireDefault(require("./header"));
 
 var _profile = _interopRequireDefault(require("./profile"));
 
-var _Menu = _interopRequireDefault(require("./Menu"));
-
 var _reactRouterDom = require("react-router-dom");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function App() {
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_header.default, null), /*#__PURE__*/_react.default.createElement(_Menu.default, null), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Switch, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_header.default, null), /*#__PURE__*/_react.default.createElement(Menu, null), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Switch, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
     exact: true,
     path: "/",
     component: _home.default
@@ -34129,7 +34105,7 @@ function App() {
 
 var _default = App;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","./home":"components/home.js","./about":"components/about.js","./contact":"components/contact.js","./header":"components/header.js","./profile":"components/profile.js","./Menu":"components/Menu.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js"}],"components/index.css":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./home":"components/home.js","./about":"components/about.js","./contact":"components/contact.js","./header":"components/header.js","./profile":"components/profile.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js"}],"components/index.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);

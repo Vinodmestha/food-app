@@ -4,7 +4,6 @@ import About from './about';
 import Contact from './contact';
 import Header from './header';
 import Profile from './profile';
-import Menu from './Menu';
 import { Route, Switch } from 'react-router-dom';
 
 
