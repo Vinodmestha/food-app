@@ -34069,22 +34069,26 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _home = _interopRequireDefault(require("./home"));
+var _home = _interopRequireDefault(require("./home.js"));
 
-var _about = _interopRequireDefault(require("./about"));
+var _about = _interopRequireDefault(require("./about.js"));
 
-var _contact = _interopRequireDefault(require("./contact"));
+var _contact = _interopRequireDefault(require("./contact.js"));
 
-var _header = _interopRequireDefault(require("./header"));
+var _header = _interopRequireDefault(require("./header.js"));
 
-var _profile = _interopRequireDefault(require("./profile"));
+var _profile = _interopRequireDefault(require("./profile.js"));
 
 var _reactRouterDom = require("react-router-dom");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+// function App(){
+//     return(
+//     )
+// }
 function App() {
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_header.default, null), /*#__PURE__*/_react.default.createElement(Menu, null), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Switch, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_header.default, null), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Switch, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
     exact: true,
     path: "/",
     component: _home.default
@@ -34105,7 +34109,7 @@ function App() {
 
 var _default = App;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","./home":"components/home.js","./about":"components/about.js","./contact":"components/contact.js","./header":"components/header.js","./profile":"components/profile.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js"}],"components/index.css":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./home.js":"components/home.js","./about.js":"components/about.js","./contact.js":"components/contact.js","./header.js":"components/header.js","./profile.js":"components/profile.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js"}],"components/index.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -34117,7 +34121,7 @@ var _react = _interopRequireDefault(require("react"));
 
 var _reactDom = _interopRequireDefault(require("react-dom"));
 
-var _app = _interopRequireDefault(require("./components/app"));
+var _app = _interopRequireDefault(require("./components/app.js"));
 
 var _reactRouterDom = require("react-router-dom");
 
@@ -34130,7 +34134,7 @@ var Index = function Index() {
 };
 
 _reactDom.default.render( /*#__PURE__*/_react.default.createElement(Index, null), document.getElementById('root'));
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./components/app":"components/app.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","./components/index.css":"components/index.css"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./components/app.js":"components/app.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","./components/index.css":"components/index.css"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -34158,7 +34162,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61314" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50726" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

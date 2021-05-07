@@ -38,7 +38,7 @@
     color: grey;
     width: 550px;
     letter-spacing: .4px;
-} button{
+}.hero-name button{
     width:170px;
     height: 40px;
     border: 2px solid red;
