@@ -12,7 +12,8 @@ function Home1(props){
                         <div className='food-content'>
                             <div className="food-name">
                                 <h1>{props.title}</h1>
-                                <p>Lorem ipsum js sj ,jdsnjnjldsljdskls dsljsdnlknds dslnd jjsndlnlnsdlkn dlnsddsnsdds dsl dsdsnlkdsdsn dslkvbx vk avjbn av h...</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                                    molestiae quas vel sint commodi repudiandae consequuntur</p>
                                 
                             </div>
                             <div className="food-order">

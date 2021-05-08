@@ -7,6 +7,7 @@
     display: flex;
     justify-content: space-around;
     line-height: 100px;
+    border-bottom: 1px solid grey;
 }.logo_name h3{
     font-size: 26px;
     font-family: cursive;
@@ -138,23 +139,9 @@ textarea{
     margin-top: 5px;
     padding: 5px 0 0 5px;
     font-size: 16px;
-
-/* }button{
-    background-color: rgb(42, 121, 42);
-    outline: none;
-    border: none;
-    padding: 10px 25px;
-    border-radius: 4px;
-    color: white;
-    margin: 20px 0 0 160px;
-    font-size: 15px;
-}.text-area, .email, .user span{ */
-    color: red;
+   color: red;
     font-size: 12px;
 }
-
-
-
 /* Min-width:500 */
 
 @media (max-width:767px){

@@ -29572,8 +29572,8 @@ module.exports = "/images.30fcad43.jpg";
 module.exports = "/images2.78a7f590.jpg";
 },{}],"food-images/images3.jpg":[function(require,module,exports) {
 module.exports = "/images3.d3f0429e.jpg";
-},{}],"food-images/hero.jpg":[function(require,module,exports) {
-module.exports = "/hero.9ae7a612.jpg";
+},{}],"food-images/mainscreenimage.png":[function(require,module,exports) {
+module.exports = "/mainscreenimage.4760037a.png";
 },{}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
@@ -29674,7 +29674,7 @@ function Home1(props) {
     className: "food-content"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "food-name"
-  }, /*#__PURE__*/_react.default.createElement("h1", null, props.title), /*#__PURE__*/_react.default.createElement("p", null, "Lorem ipsum js sj ,jdsnjnjldsljdskls dsljsdnlknds dslnd jjsndlnlnsdlkn dlnsddsnsdds dsl dsdsnlkdsdsn dslkvbx vk avjbn av h...")), /*#__PURE__*/_react.default.createElement("div", {
+  }, /*#__PURE__*/_react.default.createElement("h1", null, props.title), /*#__PURE__*/_react.default.createElement("p", null, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur")), /*#__PURE__*/_react.default.createElement("div", {
     className: "food-order"
   }, /*#__PURE__*/_react.default.createElement("span", null, "$ 15"), /*#__PURE__*/_react.default.createElement("button", {
     className: "btn-order"
@@ -29683,7 +29683,29 @@ function Home1(props) {
 
 var _default = Home1;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","./home.css":"components/home.css"}],"components/home.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./home.css":"components/home.css"}],"components/footer.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Footer() {
+  return /*#__PURE__*/_react.default.createElement("div", {
+    className: "footer"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "footer-copyrights"
+  }, /*#__PURE__*/_react.default.createElement("h3", null, "Online Food App"), /*#__PURE__*/_react.default.createElement("span", null, "\xA9 2021")));
+}
+
+var _default = Footer;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js"}],"components/home.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -29699,11 +29721,13 @@ var _images2 = _interopRequireDefault(require("../food-images/images2.jpg"));
 
 var _images3 = _interopRequireDefault(require("../food-images/images3.jpg"));
 
-var _hero = _interopRequireDefault(require("../food-images/hero.jpg"));
+var _mainscreenimage = _interopRequireDefault(require("../food-images/mainscreenimage.png"));
 
 require("./home.css");
 
 var _homescreen = _interopRequireDefault(require("./homescreen"));
+
+var _footer = _interopRequireDefault(require("./footer.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -29711,13 +29735,15 @@ function Home() {
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
     className: "hero-content"
   }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "hero-content-screen"
+  }, /*#__PURE__*/_react.default.createElement("div", {
     className: "hero-name"
-  }, /*#__PURE__*/_react.default.createElement("h1", null, "One - Stop ", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("span", null, " Delicious"), /*#__PURE__*/_react.default.createElement("br", null), "Food Place.  "), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("p", null, "One stop plae for you to lorem ipsum dollar sit amet ", /*#__PURE__*/_react.default.createElement("br", null), "consectuere asep asdispiscing set diam like heaven one stop place  for you to lorem ipsum dollar sit amet consectuere asep asdispiscing."), /*#__PURE__*/_react.default.createElement("button", null, "Order Now")), /*#__PURE__*/_react.default.createElement("div", {
+  }, /*#__PURE__*/_react.default.createElement("h1", null, "One - Stop ", /*#__PURE__*/_react.default.createElement("br", null), " ", /*#__PURE__*/_react.default.createElement("span", null, " Delicious"), /*#__PURE__*/_react.default.createElement("br", null), " Food Place.  "), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("p", null, "One stop plae for you to lorem ipsum dollar sit amet consectuere asep asdispiscing set diam like heaven one stop place  for you to lorem ipsum dollar sit amet consectuere asep asdispiscing."), /*#__PURE__*/_react.default.createElement("button", null, "Order Now")), /*#__PURE__*/_react.default.createElement("div", {
     className: "hero-image"
   }, /*#__PURE__*/_react.default.createElement("img", {
-    src: _hero.default,
+    src: _mainscreenimage.default,
     className: "hero-img"
-  }))), /*#__PURE__*/_react.default.createElement("div", {
+  })))), /*#__PURE__*/_react.default.createElement("div", {
     className: "home"
   }, /*#__PURE__*/_react.default.createElement(_homescreen.default, {
     title: "Biryani",
@@ -29728,12 +29754,23 @@ function Home() {
   }), /*#__PURE__*/_react.default.createElement(_homescreen.default, {
     title: "Biryani",
     image: _images3.default
-  })));
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    className: "home"
+  }, /*#__PURE__*/_react.default.createElement(_homescreen.default, {
+    title: "Biryani",
+    image: _images.default
+  }), /*#__PURE__*/_react.default.createElement(_homescreen.default, {
+    title: "Ghee Rice",
+    image: _images2.default
+  }), /*#__PURE__*/_react.default.createElement(_homescreen.default, {
+    title: "Biryani",
+    image: _images3.default
+  })), /*#__PURE__*/_react.default.createElement(_footer.default, null));
 }
 
 var _default = Home;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","../food-images/images.jpg":"food-images/images.jpg","../food-images/images2.jpg":"food-images/images2.jpg","../food-images/images3.jpg":"food-images/images3.jpg","../food-images/hero.jpg":"food-images/hero.jpg","./home.css":"components/home.css","./homescreen":"components/homescreen.js"}],"components/about.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../food-images/images.jpg":"food-images/images.jpg","../food-images/images2.jpg":"food-images/images2.jpg","../food-images/images3.jpg":"food-images/images3.jpg","../food-images/mainscreenimage.png":"food-images/mainscreenimage.png","./home.css":"components/home.css","./homescreen":"components/homescreen.js","./footer.js":"components/footer.js"}],"components/about.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -34022,39 +34059,10 @@ function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "functio
 
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { var _i = arr && (typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]); if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
 function Profile() {
-  var _useState = (0, _react.useState)(""),
-      _useState2 = _slicedToArray(_useState, 2),
-      Pics = _useState2[0],
-      setPics = _useState2[1];
-
-  var imgView = function imgView(e) {
-    setPics.e.target;
-  };
-
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
     className: "container"
-  }, Pics, /*#__PURE__*/_react.default.createElement("div", {
-    className: "profile"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    src: _pic.default,
-    className: "profile-pic",
-    onClick: imgView
-  })), /*#__PURE__*/_react.default.createElement("div", {
-    className: "profile-about"
-  }, /*#__PURE__*/_react.default.createElement("h5", null, "Vinod Mestha"))));
+  }, "This is profile"));
 }
 
 var _default = Profile;
@@ -34162,7 +34170,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50726" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52487" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
